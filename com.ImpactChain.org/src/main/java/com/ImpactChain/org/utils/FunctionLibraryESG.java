@@ -116,7 +116,20 @@ public class FunctionLibraryESG {
 	
 	
 	
-	
+	public String getConfigProperty(String propertyName) {
+
+		try {
+			FileReader fr = new FileReader("src\\main\\resources\\config.properties");
+			Properties props = new Properties();
+			props.load(fr);
+			return props.getProperty(propertyName);
+		} catch (Exception e) {
+
+			LogUtil.info("Failed to getConfigProperty");
+
+		}
+		return null;
+	}
 	
 	
 	

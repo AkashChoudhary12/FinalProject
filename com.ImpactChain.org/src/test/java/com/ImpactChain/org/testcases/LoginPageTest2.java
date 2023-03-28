@@ -16,12 +16,12 @@ import com.ImpactChain.org.base.TestBase;
 import com.ImpactChain.org.pageclass.DashboardPage;
 import com.ImpactChain.org.pageclass.LoginPage;
 
-public class LoginPageTest extends TestBase {
+public class LoginPageTest2 extends TestBase {
 
 	private LoginPage loginPage;
 	private DashboardPage dashboardPage;
 
-	public LoginPageTest() {
+	public LoginPageTest2() {
 		// calls the constructor of extended TestBase class
 		super();
 
@@ -64,7 +64,7 @@ public class LoginPageTest extends TestBase {
 		dashboardPage.verityTitle();
 		dashboardPage.clickUserIcon();
 		dashboardPage.clickLogOut();
-		loginPage.verifyLoginText();
+		loginPage.verifyLoginText2();
 
 	}
 

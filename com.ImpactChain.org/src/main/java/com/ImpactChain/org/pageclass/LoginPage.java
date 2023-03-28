@@ -47,11 +47,13 @@ public class LoginPage extends FunctionLibraryESG {
 	}
 
 	// Action:login
-	public void login(String un, String pwd) {
+	public void login() {
+		
+		driver.get(getConfigProperty("F1_url"));
 
-		sendInput(username, un);
+		sendInput(username, getConfigProperty("FA_username_F1"));
 
-		sendInput(password, pwd);
+		sendInput(password, getConfigProperty("FA_password_F1"));
 
 		clickElement(loginBtn);
 
@@ -62,5 +64,27 @@ public class LoginPage extends FunctionLibraryESG {
 		verify(getText(loginBtn), "Sign In");
 
 	}
+	
+	
+	
+	public void verifyLoginText2() {
+
+		verify(getText(loginBtn), "Sign In1");
+
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

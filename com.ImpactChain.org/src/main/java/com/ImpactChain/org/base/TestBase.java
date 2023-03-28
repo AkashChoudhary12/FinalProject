@@ -70,7 +70,7 @@ public class TestBase {
 
 	}
 
-	public static void initialization(@Optional("") String browser) {
+	public static void initialization( @Optional("") String browser) {
 
 		String browserName = null;
 		if (browser.contains("")) {
@@ -125,7 +125,7 @@ public class TestBase {
 		// TestBase.driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Constant.PAGE_LOAD_TIMEOUT));
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constant.IMPLICIT_WAIT));
 
-		driver.get(prop.getProperty("url"));
+//		driver.get(prop.getProperty("F1_url"));
 
 	}
 

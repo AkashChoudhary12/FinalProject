@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ImpactChain.org.testcases.LoginPageTest">
+      <class name="com.ImpactChain.org.testcases.LoginPageTest2">
         <methods>
-          <include name="configExtent"/>
-          <include name="verifyLogin"/>
           <include name="endExtentReport"/>
-          <include name="setUp"/>
+          <include name="verifyLogin"/>
+          <include name="configExtent"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.ImpactChain.org.testcases.LoginPageTest -->
+      </class> <!-- com.ImpactChain.org.testcases.LoginPageTest2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
